@@ -1,0 +1,56 @@
+*{
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; 
+}
+
+body{
+    background-color: #2e2d2d;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+}
+
+/*ОБЩИЕ ХАР-КИ БЛОКОВ*/
+.block {
+    display: flex;
+    margin: 0 auto;
+}
+
+/*КНОПКИ*/
+.button_buyticket{
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+    color: #FF12BD;
+    border: 3px solid #FF12BD;
+    border-radius: 30px;
+    background: none;
+    line-height: 1.1;
+    padding: 5px 30px;
+    transition: color .2s linear, background-color .2s linear, box-shadow .2s linear;
+}
+.button_buyticket:hover{
+    background-color: #FF12BD;
+    color: white;
+    box-shadow: 7px 7px 15px #FF12BD(0,0,0,0.25);
+}
+.button_trailer{
+    font-size: 20px;
+    display: inline-block;
+    color: #FF12BD;
+    border: 3px solid #FF12BD;
+    border-radius: 30px;
+    background: none;
+    padding: 8px 10px 8px 12px;
+    transition: color .2s linear, background-color .2s linear, box-shadow .2s linear;
+}
+.button_trailer:hover{
+    background-color: #FF12BD;
+    color: white;
+    box-shadow: 7px 7px 15px #FF12BD(0,0,0,0.25);
+}

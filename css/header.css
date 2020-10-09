@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    margin: 1% 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.header .menu{
+    width: 45%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around; 
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+}
+.header .menu a{
+    color: #fff;
+    transition: color .2s linear;
+    vertical-align: top;
+    padding: 0 30px;
+    position: relative;
+}
+.header .menu a:after{
+    display: block;
+    transition: width .2s linear;
+    content: "";
+    width: 0%;
+    height: 1.5px;
+    background-color: #FF12BD;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;   
+}
+.header .menu a:hover{
+    color: #FF12BD;
+}
+.header .menu a:hover:after{
+    width: 100%;
+}
