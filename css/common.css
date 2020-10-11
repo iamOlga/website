@@ -18,11 +18,22 @@ body{
 .block {
     display: flex;
     margin: 0 auto;
+    padding: 0 8%;
+}
+
+/*ЗАГОЛОВКИ*/
+.header3 h2{
+    text-align: left;
+    width: 50%;
+    border-bottom:3px solid #FF12BD;
+    font-size: 2.2vw;
+    margin: 5% 0 2% 0;
+    font-weight: 400;
 }
 
 /*КНОПКИ*/
 .button_buyticket{
-    font-size: 20px;
+    font-size: 1.6vw;
     font-weight: 500;
     display: inline-block;
     vertical-align: top;
@@ -40,13 +51,13 @@ body{
     box-shadow: 7px 7px 15px #FF12BD(0,0,0,0.25);
 }
 .button_trailer{
-    font-size: 20px;
+    font-size: 1.6vw;
     display: inline-block;
     color: #FF12BD;
     border: 3px solid #FF12BD;
     border-radius: 30px;
     background: none;
-    padding: 8px 10px 8px 12px;
+    padding: 6px 12px 6px 14px;
     transition: color .2s linear, background-color .2s linear, box-shadow .2s linear;
 }
 .button_trailer:hover{

@@ -1,0 +1,29 @@
+.third_block{
+    margin-top: 3%;
+    flex-direction: column;
+}
+.third_block .header3{
+    margin: 0 0 6%;
+}
+
+
+
+.fourth_block{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+.fourth_block .header3{
+    transform: rotate(90deg);
+}
+.fourth_block .header3 h2{
+    padding: 60% 0 0 0;
+    margin: 0;
+    min-width: 30vh;
+    
+}
+
+.fourth_block .map{
+    width: 90vh;
+    height: 30vh;
+}
