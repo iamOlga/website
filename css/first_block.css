@@ -1,12 +1,19 @@
+.first_block{
+    flex-direction: column;
+}
+.first_block .container_main{
+    flex-direction: row;
+    height: 92vh;
+}
 .first_block .left{
     width: 50%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .first_block .right{
-    height: 100vh;
+    height: 100%;
     width: 50%;
 }
 .first_block .left .container{
@@ -23,18 +30,20 @@
     height: 100%;
 }
 .first_block .left .container .top .title{
-    font-size: 8vw;
+    font-size: 6rem;
     font-weight: 700;
     width: 80%;
     text-align: center;
+    margin-right: 1rem;
 }
 .first_block .left .container .top .addition{
-    font-size: 2vw;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
+    margin: 2rem;
 }
 .first_block .left .container .top .addition .genre,
 .first_block .left .container .top .addition .date{
@@ -49,10 +58,36 @@
     padding: 10% 0 6% 0;
 }
 .first_block .left .container .bottom .trailer .button_trailer{
-    font-size: 3.2vw;
+    font-size: 2.5rem;
     border-radius: 50px;  
     padding: 8px 14px 8px 20px;
+    
 } 
+.first_block .left .container .bottom .trailer .button{
+    margin: 1rem;
+}
+.yakor{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.yakor_down{
+    font-size: 1.5rem;
+    line-height: 1rem;
+    padding-top: 1rem;
+    width:3rem;
+    height:3rem;
+    border:2px solid white;
+    border-radius: 100%;
+    margin:auto;
+    text-align: center;
+}
+
+.yakor_down:hover{
+    border:2px solid black;
+    background-color: black;
+    color:white;    
+}
 
 
 

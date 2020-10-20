@@ -1,42 +1,61 @@
 .second_block{
     flex-direction: column;
+    padding-top:5rem ;
 }
 .second_block .films{
     padding: 4% 0 0 0;
+    
+justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .second_block .films .item{
-width: 22%;
+min-width: 22%;
 height: 40%;
-margin: 0 2% 5% 0;
+margin-bottom: 4rem;
 display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+background-color: rgb(56, 56, 56, .5);
+border-radius: 30px;
+padding-bottom: 1rem;
 }
 .second_block .films .item .poster{
     width: 100%;
+    position: relative;
+}
+.pinfo{
+    position: absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:-5;
+    
 }
 
+.pinfo .info{
+    line-height: 50%;
+    padding-top:50%;
+}
 .second_block .films .item .poster img{
     opacity: 1;
     transition: opacity .2s linear;
 }
 .second_block .films .item .poster img:hover{
-    opacity: 0.5;
+    opacity: 0.3;
 }
 .second_block .films .item .info h3{
-    font-size: 1.9vw;
+    font-size: 1.6rem;
     margin: 5px 0;
 }
 .second_block .films .item .info h5{
-    font-size: 1.2vw;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 .second_block .films .item .info h4{
-    font-size: 1.6vw;
+    font-size: 1.2rem;
     color: #FF12BD;
     margin: 5px 0;
 }
@@ -45,7 +64,8 @@ text-align: center;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding: 5% 0 0 0;
+    
 }
