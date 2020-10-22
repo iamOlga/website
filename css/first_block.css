@@ -1,9 +1,14 @@
 .first_block{
     flex-direction: column;
+    background-image: url("../images/Raya-And-The-Last-Dragon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .first_block .container_main{
     flex-direction: row;
     height: 92vh;
+
 }
 .first_block .left{
     width: 50%;
@@ -22,15 +27,19 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+   
 }
 .first_block .left .container .top{
     display: flex;
     align-items: center;
     flex-direction: row;
     height: 100%;
+    
+   
+
 }
 .first_block .left .container .top .title{
-    font-size: 6rem;
+    font-size: 4.2rem;
     font-weight: 700;
     width: 80%;
     text-align: center;
@@ -55,7 +64,8 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding: 10% 0 6% 0;
+    padding: 6% 0 6% 0;
+    margin-top: 30px;
 }
 .first_block .left .container .bottom .trailer .button_trailer{
     font-size: 2.5rem;
