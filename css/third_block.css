@@ -4,9 +4,11 @@
 }
 .third_block .header3{
     margin: 0 0 3%;
+    animation: scroll_opacity 3s forwards;
 }
-
-
+.third_block .carousel{
+    animation: scroll_opacity 3s forwards;
+}
 
 .fourth_block{
     flex-direction: row;
@@ -16,17 +18,17 @@
 .fourth_block .header3{
     transform: rotate(90deg);
     min-width: 18%; 
-
+    animation: scroll_opacity 3s forwards;
 }
 .fourth_block .header3 h2{
     margin: 0;
     width: 100%;
-   
 }
 .fourth_block .map{
    padding-left: 5%;
     width: 70%;
     height: 20%;
+    animation: scroll_opacity 3s forwards;
 }
 .footer{
     margin-top: 6%;

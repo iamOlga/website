@@ -2,59 +2,67 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/first_block.css">
     <link rel="stylesheet" type="text/css" href="css/second_block.css">
     <link rel="stylesheet" type="text/css" href="css/third_block.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
     <title>Cinema</title>
+    <script src="libraries/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
 <!-- МЕНЮ @media для телефонов-->
     <header class="header">
         <div class="menu">
                 <a href="#">home</a>
-                <a href="#">movie</a>
-                <a href="#">promotion</a>
+                <a href="#yak1">movie</a>
+                <a href="#yak2">promotion</a>
                 <a href="#">booking</a>           
         </div>
     </header>
 
-<!-- ПЕРВЫЙ БЛОК почитать про БЭМ-->
-    <div class="block first_block">
-        <div class="container_main">
-            <div class="left">
-             <div class="container">
-                 <div class="top">
-                     <h1 class="title">Raya and the Last Dragon</h1>
-                     <div class="addition">
-                         <div class="genre">Fantasy / Animation</div>
-                         <div class="date">12 March<br>2021</div>
-                     </div>
-                 </div>
-                 <div class="bottom">
-                     <div class="trailer"><a href="#" class="button_trailer">►</a></div>
-                     <div class="button"><a href="#" class="button_buyticket">Buy ticket</a></div>
-                 </div>
-             </div>
-             </div> 
-            <div class="right"></div> 
+<!-- ПЕРВЫЙ БЛОК-->
+    <div class="block pre_first_block">
+        <div class="first_block">
+            <div class="container_main">
+                <div class="left">
+                <div class="container">
+                    <div class="top">
+                        <h1 class="title">Raya and the Last Dragon</h1>
+                        <div class="addition">
+                            <div class="genre">Fantasy / Animation</div>
+                            <div class="date">12 March<br>2021</div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="trailer"><a href="#" class="button_trailer">►</a></div>
+                        <div class="button"><a href="#" class="button_buyticket">Buy ticket</a></div>
+                    </div>
+                </div>
+                </div> 
+                <div class="right"></div> 
+                </div>
+            <div class="yakor">
+                <div class="yakor_down"><a href="#yak1">⇩</a></div>
             </div>
-        <div class="yakor">
-            <div class="yakor_down">⇩</div>
         </div>
-
     </div>
 
 <!-- ВТОРОЙ БЛОК NOW SHOWING-->
-<div class="block second_block">
-        <div class="header3">
+<div class="block second_block" >
+        <div id="yak1" class="header3 wow">
             <h2>Now showing</h2>
         </div>
         <div class="films">
             <!-- 1 -->
-            <div class="item">
+            <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/avatar2.jpg" width="100%" alt="Avatar 2"></a>
                     <div class="pinfo">
@@ -74,7 +82,7 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="item">
+            <div class="wow item">
                 <div class="poster">                   
                     <a href="#"><img src="images/A_Quiet_Place.jpg" width="100%" alt="A Quiet Place"></a>
                     </div>
@@ -89,7 +97,7 @@
                 </div>
             </div>
             <!-- 3 -->
-            <div class="item">
+            <div class="wow item">
                 <div class="poster">                   
                     <a href="#"><img src="images/Black_Widow.jpg" width="100%" alt="Black Widow"></a>
                     </div>
@@ -104,7 +112,7 @@
                 </div>
             </div>
             <!-- 4 -->
-            <div class="item">
+            <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Nine_Days.jpg" width="100%" alt="Nine Days"></a>
                     </div>
@@ -119,7 +127,7 @@
                 </div>
             </div>
             <!-- 5 -->
-            <div class="item">
+            <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Peterrabbit2.jpg" width="100%" alt="Peter rabbit 2"></a>
                     </div>
@@ -134,7 +142,7 @@
                 </div>
             </div>
             <!-- 6 -->
-            <div class="item">
+            <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Respect.png" width="100%" alt="Respect"></a>
                     </div>
@@ -149,7 +157,7 @@
                 </div>
             </div>
             <!-- 7 -->
-            <div class="item">
+            <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Spiral.jpeg" width="100%" alt="Spiral"></a>
                     </div>
@@ -164,7 +172,7 @@
                 </div>
             </div>
             <!-- 8 -->
-            <div class="item">
+            <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/The_King's_Man.jpg" width="100%" alt="The King's Man"></a>
                     </div>
@@ -183,16 +191,16 @@
 
 <!-- ТРЕТИЙ БЛОК NOW Promotions-->
 <div class="block third_block">
-    <div class="header3">
+    <div id="yak2" class="header3 wow">
         <h2>Promotions</h2>
     </div>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide wow" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="#"><img class="d-block w-100" src="images/prom2.jpg" alt="Первый слайд"></a>
           </div>
           <div class="carousel-item">
-            <a href="#"><img class="d-block w-100" src="images/prom1.jpg" alt="Второй слайд"></a>
+            <a href="#"><img class="d-block w-100" src="images/prom2.jpg" alt="Второй слайд"></a>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -209,11 +217,11 @@
 <!-- ЧЕТВЕРТЫЙ БЛОК NOW Find us-->
 <div class="block fourth_block">
     
-    <div class="map">
+    <div class="map wow">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104316.48603193034!2d2.2953414266890024!3d48.8580103467927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x54f8b8e7dbcce54e!2s%C5%8Cma%20Cinema!5e0!3m2!1sru!2sby!4v1602435784901!5m2!1sru!2sby" 
         width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
     </div>
-    <div class="header3">
+    <div class="header3 wow">
         <h2>Find us</h2>
     </div>
 </div>
@@ -223,14 +231,30 @@
 
 </div>
 
-
-
-
-
-
-</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--scroll script-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#menu").on("click",".local_href", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href');
+            var top2 = $(id).offset().top;
+            $('body,html').animate({scrollTop: top2}, 1200);
+        });
+    });
+</script>
+<!--yakor script-->
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#menu").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1800);
+       });
+   });
+   </script>
 </body>
 </html>

@@ -70,3 +70,7 @@ body{
     color: white;
     box-shadow: 7px 7px 15px #FF12BD(0,0,0,0.25);
 }
+@keyframes scroll_opacity {
+    from { opacity: 0; }   
+    to { opacity: 1; }
+   }
