@@ -39,7 +39,7 @@ animation: scroll_opacity 3s forwards;
 }
 
 .pinfo .info{
-    line-height: 50%;
+    
     padding-top:50%;
 }
 .second_block .films .item .poster img{
@@ -47,7 +47,7 @@ animation: scroll_opacity 3s forwards;
     transition: opacity .2s linear;
 }
 .second_block .films .item .poster img:hover{
-    opacity: 0.3;
+    opacity: 0.2;
 }
 .second_block .films .item .info h3{
     font-size: 1.6rem;

@@ -10,7 +10,33 @@
     <link rel="stylesheet" type="text/css" href="css/third_block.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+	$('.popup-open').click(function() {
+		$('.popup-fade').fadeIn();
+		return false;
+	});	
+	
+	$('.popup-close').click(function() {
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});		
+ 
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade').fadeOut();
+		}
+	});
+	
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+});
+</script>
     <title>Cinema</title>
     <script src="libraries/wow.min.js"></script>
     <script>
@@ -42,7 +68,7 @@
                         </div>
                     </div>
                     <div class="bottom">
-                        <div class="trailer"><a href="#" class="button_trailer">►</a></div>
+                        <div class="trailer"><a href="#" class="popup-open button_trailer">►</a></div>
                         <div class="button"><a href="#" class="button_buyticket">Buy ticket</a></div>
                     </div>
                 </div>
@@ -67,7 +93,10 @@
                     <a href="#"><img src="images/avatar2.jpg" width="100%" alt="Avatar 2"></a>
                     <div class="pinfo">
                         <div class="info">
-                            ................................................................
+                            The film is also expected to explore much more of Pandora than before, 
+                            not least because of the new underwater mo-cap technology Cameron has 
+                            developed for Avatar 2, which means the sequel will be going into the depths 
+                            of the world's oceans as well as covering its land.
                         </div>
                     </div>
                 </div>
@@ -85,7 +114,15 @@
             <div class="wow item">
                 <div class="poster">                   
                     <a href="#"><img src="images/A_Quiet_Place.jpg" width="100%" alt="A Quiet Place"></a>
+                    <div class="pinfo">
+                        <div class="info">
+                            Following the deadly events at home, the Abbott family must now face the terrors 
+                            of the outside world as they continue their fight for survival in silence. 
+                            Forced to venture into the unknown, they quickly realize that the creatures that 
+                            hunt by sound are not the only threats that lurk beyond the sand path.                        
+                        </div>
                     </div>
+                </div>
                 <div class="info">
                     <h3>A Quiet Place / <span style="font-size: 1.3rem">Thriller</span></h3>
                     <h5>2 hours</h5>
@@ -100,7 +137,16 @@
             <div class="wow item">
                 <div class="poster">                   
                     <a href="#"><img src="images/Black_Widow.jpg" width="100%" alt="Black Widow"></a>
+                    <div class="pinfo">
+                        <div class="info">
+                            Following the events of Captain America: Civil War (2016), Natasha Romanoff finds 
+                            herself alone and forced to confront a dangerous conspiracy with ties to her past. 
+                            Pursued by a force that will stop at nothing to bring her down, Romanoff must deal 
+                            with her history as a spy and the broken relationships left in her wake long before 
+                            she became an Avenger.                        
+                        </div>
                     </div>
+                </div>
                 <div class="info">
                     <h3>Black Widow / <span style="font-size: 1.3rem">Action</span></h3>
                     <h5>2 hours</h5>
@@ -115,7 +161,11 @@
             <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Nine_Days.jpg" width="100%" alt="Nine Days"></a>
+                    <div class="pinfo">
+                        <div class="info">
+                            A reclusive man conducts a series of interviews with human souls for a chance to be born.                        </div>
                     </div>
+                </div>
                 <div class="info">
                     <h3>Nine Days / <span style="font-size: 1.3rem">Fantasy</span></h3>
                     <h5>2 hours</h5>
@@ -130,7 +180,14 @@
             <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Peterrabbit2.jpg" width="100%" alt="Peter rabbit 2"></a>
+                    <div class="pinfo">
+                        <div class="info">
+                            Bea, Thomas, and the rabbits have created a makeshift family, but despite his best efforts, 
+                            Peter can’t seem to shake his mischievous reputation. Adventuring out of the garden, 
+                            Peter finds himself in a world where his mischief is appreciated, but when his family 
+                            risks everything to come looking for him, Peter must figure out what kind of bunny he wants to be.                        </div>
                     </div>
+                </div>
                 <div class="info">
                     <h3>Peter rabbit 2 / <span style="font-size: 1.3rem">Comedy</span></h3>
                     <h5>2 hours</h5>
@@ -145,7 +202,14 @@
             <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Respect.png" width="100%" alt="Respect"></a>
+                    <div class="pinfo">
+                        <div class="info">
+                            Following the rise of Aretha Franklin's career from a child singing in her 
+                            father's church's choir to her international superstardom, RESPECT is the remarkable 
+                            true story of the music icon's journey to find her voice.                        
+                        </div>
                     </div>
+                </div>
                 <div class="info">
                     <h3>Respect / <span style="font-size: 1.3rem">Drama</span></h3>
                     <h5>2 hours</h5>
@@ -160,7 +224,14 @@
             <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/Spiral.jpeg" width="100%" alt="Spiral"></a>
+                    <div class="pinfo">
+                        <div class="info">
+                            Working in the shadow of an esteemed police veteran, brash detective Ezekiel "Zeke" Banks 
+                            and his rookie partner William Schenk take charge of a grisly investigation into murders 
+                            that are eerily reminiscent of the city's gruesome past. Unwittingly trapped 
+                            in a deepening mystery, Zeke finds himself at the center of the killer's morbid game.                        </div>
                     </div>
+                </div>
                 <div class="info">
                     <h3>Spiral / <span style="font-size: 1.3rem">Thriller</span></h3>
                     <h5>2 hours</h5>
@@ -175,7 +246,15 @@
             <div class="item wow">
                 <div class="poster">                   
                     <a href="#"><img src="images/The_King's_Man.jpg" width="100%" alt="The King's Man"></a>
+                    <div class="pinfo">
+                        <div class="info">
+                            As a collection of history's worst tyrants and criminal masterminds gather to plot 
+                            a war to wipe out millions, one man must race against time to stop them. 
+                            This is a prequel to the Kingsman franchise that explores the origins of 
+                            the Kingsman intelligence agency.                        
+                        </div>
                     </div>
+                </div>
                 <div class="info">
                     <h3>The King's Man / <span style="font-size: 1.3rem">Action</span></h3>
                     <h5>2 hours</h5>
@@ -226,10 +305,22 @@
     </div>
 </div>
 
+
+
+
+
 <!-- FOOTER-->
 <div class=" block footer">
-
+    
 </div>
+
+<!-- VIDEOOOOO-->
+<div class="popup-fade">
+    <div class="popup">
+        <iframe src="https://www.youtube.com/embed/9BPMTr-NS9s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>		
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -256,5 +347,6 @@
        });
    });
    </script>
+
 </body>
 </html>
