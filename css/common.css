@@ -11,11 +11,14 @@ a{
     text-decoration: none !important; 
 }
 
-body{
-    background-color: #2e2d2d;
+body {
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
+	background-color: #3f3f3f;
+	background-size: 400% 400%;
 }
+
+
 
 /*ОБЩИЕ ХАР-КИ БЛОКОВ*/
 .block {
