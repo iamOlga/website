@@ -2,27 +2,46 @@ body{
     background-color: black;
 }
 .mainblock{
+    background-size: cover;
     flex-direction: row;
     margin-top: 10vh;
-    padding: 5vh 20vh 0 20vh;
+    padding: 5vh 20vh 2vh 20vh;
     align-items: center;
     justify-content: space-around;
 }
 .mainblock .mainblock-1{
     min-width: 33,3%;
 }
+#backpic{
+    background-size: cover;
+}
+#backpic-opacity{
+    background-color: rgba(0, 0, 0, 0.63);
+}
 /************ MAP SECTORS ************/
 .mainblock .mainblock-1 .map_block{
     display: flex;
     flex-direction: column;
-    padding: 15vh 5vh 0 5vh;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 0.767);
+    padding: 10px;
+    border-radius: 15px;
 }
 .mainblock .mainblock-1 .map_block .standard_sector{
     padding:10vh 0 5vh 0;
 }
 .mainblock .mainblock-1 .map_block img{
     width: 50vh;
+    border:2px solid #ff12bc00;
+    padding:5px;
+    border-radius: 10px;
 }
+
+.mainblock .mainblock-1 .map_block .pic_sector:hover{
+    border:2px solid #FF12BD;
+}
+
+
 /************ INFO ************/
 .info_block{
     padding: 0 3vh;
@@ -32,11 +51,15 @@ body{
     align-items: center;
 }
 /* header3 */
+.info_block .header3{
+     width: 100%;;
+}
 .info_block .header3 h2{
     font-size: 2.2rem;
     border-bottom:none;
     width: 100%;
     text-align: center;
+
 }
 .info_block .header3 h4{
     font-size: 1.2rem;
@@ -55,21 +78,31 @@ body{
 .info_block .time {
     width: 80%;
 }
-.info_block .date .button_date, .info_block .buyblock .button_buyticket{
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding: 5px 20px;
-    min-width: 50px;
-    border: 2px solid #FF12BD;
+/* input */
+.form_radio_btn, .form_radio_btn2, .form_radio_btn3 {
+	display: inline-block;
+	margin-right: 10px;
 }
-.info_block .time .button_time{
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding: 5px 10px;
-    min-width: 50px;
-    border: 2px solid #FF12BD;
+.form_radio_btn input[type=radio], .form_radio_btn2 input[type=radio], .form_radio_btn3 input[type=radio] {
+	display: none;
 }
-/* infosectors */
+.form_radio_btn label, .form_radio_btn2 label, .form_radio_btn3 label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 2px solid #FF12BD;
+	border-radius: 30px;
+	user-select: none;
+}
+.form_radio_btn input[type=radio]:checked + label, .form_radio_btn2 input[type=radio]:checked + label, .form_radio_btn3 input[type=radio]:checked + label {
+	background: #FF12BD;
+}
+.form_radio_btn label:hover, .form_radio_btn2 label:hover, .form_radio_btn3 label:hover {
+	color: white;
+}
+
+/* info seats */
 .info_block .infosectors, .info_block .emailblock{
     flex-direction: column;
     align-items: center;
@@ -88,6 +121,8 @@ body{
 .info_block .infosectors .vippic{
     width: 4vh;
 }
+
+
 /* emailblock */
 .info_block .emailblock{
     width: 90%;
@@ -123,4 +158,24 @@ body{
 .film_block{
     width: 50vh;
 }
+.info_block .buyblock .button_buyticket{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 5px 20px;
+    min-width: 50px;
+    border: 2px solid #FF12BD;
+}
 
+/************ FILM ************/
+.film_block{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 0.767);
+    padding: 10px;
+    border-radius: 15px; 
+}
+.film_block .film_item{
+    margin-top: 2vh;
+}

@@ -6,6 +6,26 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <title>Booking</title>
+    <script>
+        function changeContent(newContent) {
+          var elem = document.getElementById("para1");
+          elem.innerText = newContent;
+
+          var pic = document.getElementById("backpic");
+          pic.style.backgroundImage = "url('images/avatarback.jpg')";
+
+        }
+        
+        function changePrice(newPrice) {
+          var elem2 = document.getElementById("para2");
+          elem2.innerHTML = newPrice;
+
+        }
+        
+        
+        
+      
+        </script>
 </head>
 <body>
     <header class="header">
@@ -14,19 +34,19 @@
                 <a href="#">booking</a>           
         </div>
     </header>
-
-    <div class="mainblock block">
+<div id='backpic'> 
+    <div id='backpic-opacity' class="mainblock block">
         <div class="sectors_map_block mainblock-1">
             <div class="map_block">
                 <div class="screen">
                     <img src="images/screen.svg" alt="screen">
                 </div>
-            <div class="standard_sector">
-                <img src="images/standard_sector.svg" alt="standard_sector">
+                <div class="standard_sector">
+                    <img onclick="changePrice('5 USD')" class="pic_sector" src="images/standard_sector.svg" alt="standard_sector"></object>
                 </div>
-            <div class="vip_sector">
-                <img src="images/vip_sector.svg" alt="vip_sector">
-            </div>
+                <div class="vip_sector">
+                    <img onclick="changePrice('12 USD')" class="pic_sector" src="images/vip_sector.svg" alt="vip_sector">
+                </div>
             </div>
         </div>
 
@@ -34,18 +54,41 @@
         <div class="info_block mainblock-1">
 
             <div class="header3">
-                <h2>The name / <span style="font-size: 1.3rem">The genre</span></h2>
+                <h2 id="para1">The name / The genre</h2>
                 <h4>2 hours</h4>
             </div>
             <div class="date">
-                <a href="#" class="button_date button_buyticket">01 oct</a>
-                <a href="#" class="button_date button_buyticket">02 oct</a>
-                <a href="#" class="button_date button_buyticket">05 oct</a>
+                <div class="form_radio_btn">
+                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                    <label for="radio-1">01 oct</label>
+                </div>
+                 
+                <div class="form_radio_btn">
+                    <input id="radio-2" type="radio" name="radio" value="2">
+                    <label for="radio-2">02 oct</label>
+                </div>
+                 
+                <div class="form_radio_btn">
+                    <input id="radio-3" type="radio" name="radio" value="3">
+                    <label for="radio-3">03 oct</label>
+                </div>
             </div>
+
             <div class="time">
-                <a href="#" class="button_time button_buyticket">17:00</a>
-                <a href="#" class="button_time button_buyticket">19:00</a>
-                <a href="#" class="button_time button_buyticket">21:00</a>
+                <div class="form_radio_btn2">
+                    <input id="radio-4" type="radio" name="radio2" value="17" checked>
+                    <label for="radio-4">17:00</label>
+                </div>
+                 
+                <div class="form_radio_btn2">
+                    <input id="radio-5" type="radio" name="radio2" value="19">
+                    <label for="radio-5">19:00</label>
+                </div>
+                 
+                <div class="form_radio_btn2">
+                    <input id="radio-6" type="radio" name="radio2" value="21">
+                    <label for="radio-6">21:00</label>
+                </div>
             </div>
 
             <div class="infosectors">
@@ -69,14 +112,53 @@
             </div>
 
             <div class="buyblock">
-                <p class="price">5 usd</p>
+                <p id="para2" class="price"></p>
                 <a href="#" class="button_buyticket">Buy ticket</a>
             </div>
         </div>
 
+
+
         <div class="film_block mainblock-1">
-            <img src="images/A_Quiet_Place.jpg" width="100%" alt="A Quiet Place">
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('Avatar / Fantasy')" id="radio-7" type="radio" name="radio3" value="10" checked>
+                <label for="radio-7"><span style="font-size: 1.3rem">Avatar 2</span> / Fantasy</label>
+            </div>
+             
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('A Quiet Place / Thriller')" id="radio-8" type="radio" name="radio3" value="20">
+                <label for="radio-8"><span style="font-size: 1.3rem">A Quiet Place</span> / Thriller</label>
+            </div>
+             
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('Black Widow /  Action')" id="radio-9" type="radio" name="radio3" value="30">
+                <label for="radio-9"><span style="font-size: 1.3rem">Black Widow</span> / Action</label>
+            </div>
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('Nine Days / Fantasy')" id="radio-10" type="radio" name="radio3" value="40" checked>
+                <label for="radio-10"><span style="font-size: 1.3rem">Nine Days</span> / Fantasy</label>
+            </div>
+             
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('Peter rabbit 2 / Comedy')" id="radio-11" type="radio" name="radio3" value="50">
+                <label for="radio-11"><span style="font-size: 1.3rem">Peter rabbit 2</span> / Comedy</label>
+            </div>
+             
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('Respect / Drama')" id="radio-12" type="radio" name="radio3" value="60">
+                <label for="radio-12"><span style="font-size: 1.3rem">Respect</span> / Drama</label>
+            </div>
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('Spiral / Thriller')" id="radio-13" type="radio" name="radio3" value="70" checked>
+                <label for="radio-13"><span style="font-size: 1.3rem">Spiral</span> / Thriller</label>
+            </div>
+             
+            <div class="form_radio_btn3 film_item">
+                <input onclick="changeContent('The Kings Man / Action')" id="radio-14" type="radio" name="radio3" value="80">
+                <label for="radio-14"><span style="font-size: 1.3rem">The King's Man</span> / Action</label>
+            </div>
         </div>
     </div>
+</div>
 </body>
 </html>

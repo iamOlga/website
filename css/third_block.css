@@ -31,9 +31,21 @@
     animation: scroll_opacity 3s forwards;
 }
 .footer{
-    margin-top: 6%;
-    min-height: 200px;
-    background-color: black;
+    margin-top: 2%;
+    background-color: rgb(32, 32, 32);
+}
+.footer p{
+    color:rgba(151, 151, 151, 0.719);
+    padding: 10px 60px;
+}
+
+.apps{
+    margin-top: 3%;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.apps img:hover{
+    opacity: 0.9;
 }
 
 
