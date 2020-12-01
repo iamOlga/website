@@ -6,23 +6,29 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <title>Booking</title>
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
         function changeContent(newContent) {
           var elem = document.getElementById("para1");
           elem.innerText = newContent;
-
-          var pic = document.getElementById("backpic");
-          pic.style.backgroundImage = "url('images/avatarback.jpg')";
 
         }
         
         function changePrice(newPrice) {
           var elem2 = document.getElementById("para2");
           elem2.innerHTML = newPrice;
-
         }
+
         
-        
+        $(function(){
+        $(document).on('click', '.picture', function(){
+        var bg = $(this).data('bg');
+        $('.backpic').css('background', 'url("'+ bg +'") 50% 50% scroll no-repeat transparent');
+            });
+        });
+
+
+
         
       
         </script>
@@ -34,7 +40,7 @@
                 <a href="#">booking</a>           
         </div>
     </header>
-<div id='backpic'> 
+<div class='backpic'> 
     <div id='backpic-opacity' class="mainblock block">
         <div class="sectors_map_block mainblock-1">
             <div class="map_block">
@@ -49,7 +55,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="info_block mainblock-1">
 
@@ -117,44 +122,42 @@
             </div>
         </div>
 
-
-
         <div class="film_block mainblock-1">
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('Avatar / Fantasy')" id="radio-7" type="radio" name="radio3" value="10" checked>
+                <input onclick="changeContent('Avatar / Fantasy')" class="picture" data-bg="images/avatarback2.jpg" id="radio-7" type="radio" name="radio3" value="10" checked>
                 <label for="radio-7"><span style="font-size: 1.3rem">Avatar 2</span> / Fantasy</label>
             </div>
              
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('A Quiet Place / Thriller')" id="radio-8" type="radio" name="radio3" value="20">
+                <input onclick="changeContent('A Quiet Place / Thriller')" class="picture" data-bg="images/quietback.jpg" id="radio-8" type="radio" name="radio3" value="20">
                 <label for="radio-8"><span style="font-size: 1.3rem">A Quiet Place</span> / Thriller</label>
             </div>
              
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('Black Widow /  Action')" id="radio-9" type="radio" name="radio3" value="30">
+                <input onclick="changeContent('Black Widow /  Action')" class="picture" data-bg="images/blackwback.jpeg" id="radio-9" type="radio" name="radio3" value="30">
                 <label for="radio-9"><span style="font-size: 1.3rem">Black Widow</span> / Action</label>
             </div>
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('Nine Days / Fantasy')" id="radio-10" type="radio" name="radio3" value="40" checked>
+                <input onclick="changeContent('Nine Days / Fantasy')"  class="picture" data-bg="images/nineback.jpg" id="radio-10" type="radio" name="radio3" value="40" checked>
                 <label for="radio-10"><span style="font-size: 1.3rem">Nine Days</span> / Fantasy</label>
             </div>
              
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('Peter rabbit 2 / Comedy')" id="radio-11" type="radio" name="radio3" value="50">
+                <input onclick="changeContent('Peter rabbit 2 / Comedy')"  class="picture" data-bg="images/rabbitback.jpg" id="radio-11" type="radio" name="radio3" value="50">
                 <label for="radio-11"><span style="font-size: 1.3rem">Peter rabbit 2</span> / Comedy</label>
             </div>
              
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('Respect / Drama')" id="radio-12" type="radio" name="radio3" value="60">
+                <input onclick="changeContent('Respect / Drama')"  class="picture" data-bg="images/respectback.jpg" id="radio-12" type="radio" name="radio3" value="60">
                 <label for="radio-12"><span style="font-size: 1.3rem">Respect</span> / Drama</label>
             </div>
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('Spiral / Thriller')" id="radio-13" type="radio" name="radio3" value="70" checked>
+                <input onclick="changeContent('Spiral / Thriller')"  class="picture" data-bg="images/spiralback.jpg" id="radio-13" type="radio" name="radio3" value="70" checked>
                 <label for="radio-13"><span style="font-size: 1.3rem">Spiral</span> / Thriller</label>
             </div>
              
             <div class="form_radio_btn3 film_item">
-                <input onclick="changeContent('The Kings Man / Action')" id="radio-14" type="radio" name="radio3" value="80">
+                <input onclick="changeContent('The Kings Man / Action')"  class="picture" data-bg="images/kingback.jpg" id="radio-14" type="radio" name="radio3" value="80">
                 <label for="radio-14"><span style="font-size: 1.3rem">The King's Man</span> / Action</label>
             </div>
         </div>

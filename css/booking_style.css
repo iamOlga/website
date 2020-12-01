@@ -12,7 +12,7 @@ body{
 .mainblock .mainblock-1{
     min-width: 33,3%;
 }
-#backpic{
+.backpic{
     background-size: cover;
 }
 #backpic-opacity{
