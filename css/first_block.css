@@ -146,6 +146,33 @@
 }
 
 
+@media screen and (max-width: 1100px) {
+
+    .first_block .left{
+        width: 100%;
+    }
+    .first_block .right{ 
+        width: 0%;
+    }
+    .first_block .left .container .top .title{
+        font-size: 3.2rem;
+    }
+    .first_block .left .container .top .addition{
+        font-size: 1.5rem;
+    } 
+    .first_block .left .container .bottom .trailer .button_trailer{
+        font-size: 1.5rem;
+        padding: 8px 12px 8px 18px;
+    } 
+  }
+  @media screen and (max-width: 700px) {
+    .pre_first_block{
+        background-image: url("../images/Raya-And-The-Last-Dragon2-600.jpg");
+    }
+    .header .menu{
+        font-size: 1.3rem;
+    }
+  }
 
 
 

@@ -143,13 +143,18 @@ body{
 }
 
 /* buyblock */
-.info_block .buyblock{
-    padding-top: 8vh;
+.buyblock-back{
+    display: flex;
+    width: 100%;
+}
+.buyblock{
+    display: flex;
     justify-content: flex-end;
-    width: 90%;
+    padding: 6vh 0;
+    width: 70%;
     align-items: baseline;
 }
-.info_block .buyblock .price{
+.buyblock .price{
     padding: 0 3vh;
     font-size: 1.5rem;
     color: #FF12BD;
@@ -158,7 +163,7 @@ body{
 .film_block{
     width: 50vh;
 }
-.info_block .buyblock .button_buyticket{
+.buyblock .button_buyticket{
     font-size: 1.2rem;
     font-weight: 400;
     padding: 5px 20px;
@@ -179,3 +184,26 @@ body{
 .film_block .film_item{
     margin-top: 2vh;
 }
+
+
+@media screen and (max-width: 1100px) {
+    .mainblock{
+        flex-direction: column-reverse;
+        
+    }
+    .mainblock .mainblock-1{
+        min-width: 95%;
+    }
+    .info_block .infosectors{
+        flex-direction: column;
+    }
+    .mainblock .mainblock-1 .map_block{
+        margin-top: 5vh;
+    }
+
+  }
+  @media screen and (max-width: 900px) {
+    .backpic{
+        background: none !important;
+    }
+  }

@@ -72,3 +72,44 @@ animation: scroll_opacity 3s forwards;
     padding: 5% 0 0 0;
     
 }
+
+@media screen and (max-width: 1000px) {
+    .second_block{    
+        padding-top:2rem ;
+    }
+    
+    .second_block .films .item .poster img{
+       width: 250px;
+        
+    }
+  }
+  @media screen and (max-width: 900px) {
+    
+    .second_block .films .item {
+        width: 220px;
+        
+         
+     }
+    .second_block .films .item .poster img{
+       width: 220px;
+        
+    }
+    .second_block .films .item .info h3{
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
+    .second_block .films .item .info h5{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .second_block .films .item .info h4{
+        font-size: 1.2rem;
+        color: #FF12BD;
+        margin: 5px 0;
+    }
+
+    .pinfo .info{
+        
+        padding-top:5%;
+    }
+  }
