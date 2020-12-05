@@ -30,14 +30,7 @@
     height: 20%;
     animation: scroll_opacity 3s forwards;
 }
-.footer{
-    margin-top: 2%;
-    background-color: rgb(32, 32, 32);
-}
-.footer p{
-    color:rgba(151, 151, 151, 0.719);
-    padding: 10px 60px;
-}
+
 
 .apps{
     margin-top: 3%;

@@ -37,8 +37,9 @@ body{
     border-radius: 10px;
 }
 
-.mainblock .mainblock-1 .map_block .pic_sector:hover{
-    border:2px solid #FF12BD;
+.mainblock .mainblock-1 .map_block img:hover{
+    box-shadow: 0 0 10px #FF12BD;
+    cursor: pointer;
 }
 
 
@@ -186,6 +187,74 @@ body{
 }
 
 
+
+
+
+.modal, .modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding: 320px 0; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100px; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content, .modal-content2 {
+    font-size: 2.0rem;
+    text-align: center;
+    position: relative;
+    background-color:  #FF12BD;
+    margin: auto;
+    padding: 20px;
+    border: 10px solid #000000;
+    border-radius: 60px;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-content2{
+    background-color:  #f50303;
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close, .close2 {
+    padding: 5px;
+    border-radius: 60px;
+    background-color: white;
+    color:  #FF12BD;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus,.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-body,.modal-body2 {padding: 2px 16px;}
+
+
+
+
+
+
 @media screen and (max-width: 1100px) {
     .mainblock{
         flex-direction: column-reverse;
@@ -200,10 +269,25 @@ body{
     .mainblock .mainblock-1 .map_block{
         margin-top: 5vh;
     }
-
+    .modal2 {
+        padding: 250px 0 300px;      
+    }
+    .modal {
+        padding: 300px 0 300px;      
+    }
+    
+    .modal-content, .modal-content2 {
+        font-size: 1.8rem;
+    }
   }
   @media screen and (max-width: 900px) {
     .backpic{
         background: none !important;
+    }
+    .modal-content, .modal-content2 {
+        font-size: 1.3rem;
+    }
+    .close, .close2 {
+        font-size: 1.2rem;
     }
   }

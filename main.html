@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Cinema</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -11,33 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function($) {
-	$('.popup-open').click(function() {
-		$('.popup-fade').fadeIn();
-		return false;
-	});	
-	
-	$('.popup-close').click(function() {
-		$(this).parents('.popup-fade').fadeOut();
-		return false;
-	});		
- 
-	$(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup-fade').fadeOut();
-		}
-	});
-	
-	$('.popup-fade').click(function(e) {
-		if ($(e.target).closest('.popup').length == 0) {
-			$(this).fadeOut();					
-		}
-	});
-});
-</script>
-    <title>Cinema</title>
+    <script src="js/video_trailer.js"></script>
     <script src="libraries/wow.min.js"></script>
     <script>
         new WOW().init();
@@ -302,8 +277,6 @@ $(document).ready(function($) {
     <a href="#"><img src="images/googleplay.png" width="150px" alt=""></a>
 </div>
 
-
-
 <!-- FOOTER-->
 <div class="block footer">
     <p>© 2006-2020 Cinema Network - all rights reserved. Privacy policy.</p>
@@ -316,32 +289,9 @@ $(document).ready(function($) {
     </div>		
 </div>
 
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<!--scroll script-->
-<script type="text/javascript">
-    $(document).ready(function(){
-        $("#menu").on("click",".local_href", function (event) {
-            event.preventDefault();
-            var id  = $(this).attr('href');
-            var top2 = $(id).offset().top;
-            $('body,html').animate({scrollTop: top2}, 1200);
-        });
-    });
-</script>
-<!--yakor script-->
-<script type="text/javascript">
-    $(document).ready(function(){
-       $("#menu").on("click","a", function (event) {
-           event.preventDefault();
-           var id  = $(this).attr('href'),
-               top = $(id).offset().top;
-           $('body,html').animate({scrollTop: top}, 1800);
-       });
-   });
-   </script>
-
+<script src="js/scroll_yakor.js"></script>
 </body>
 </html>

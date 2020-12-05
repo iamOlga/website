@@ -73,6 +73,16 @@ body {
     color: white;
     box-shadow: 7px 7px 15px #FF12BD(0,0,0,0.25);
 }
+
+
+.footer{
+    margin-top: 2%;
+    background-color: rgb(32, 32, 32);
+}
+.footer p{
+    color:rgba(151, 151, 151, 0.719);
+    padding: 10px 60px;
+}
 @keyframes scroll_opacity {
     from { opacity: 0; }   
     to { opacity: 1; }

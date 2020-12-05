@@ -1,34 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Booking</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/booking_style.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>Booking</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        function changeContent(newContent) {
-          var elem = document.getElementById("para1");
-          elem.innerText = newContent;
-
-        }
-        
-        function changePrice(newPrice) {
-          var elem2 = document.getElementById("para2");
-          elem2.innerHTML = newPrice;
-        }
-
-        
-        $(function(){
-        $(document).on('click', '.picture', function(){
-        var bg = $(this).data('bg');
-        $('.backpic').css('background', 'url("'+ bg +'") 50% 50% scroll no-repeat transparent');
-            });
-        });
-        
-      
-        </script>
+    <script src="js/change_contant.js"></script>   
 </head>
 <body>
     <header class="header">
@@ -37,18 +16,19 @@
                 <a href="#">booking</a>           
         </div>
     </header>
-<div class='backpic'> 
+
+    <div class='backpic'> 
     <div id='backpic-opacity' class="mainblock block">
         <div class="sectors_map_block mainblock-1">
             <div class="map_block">
                 <div class="screen">
                     <img src="images/screen.svg" alt="screen">
                 </div>
-                <div class="standard_sector">
-                    <img onclick="changePrice('5 USD')" class="pic_sector" src="images/standard_sector.svg" alt="standard_sector"></object>
+                <div  class="standard_sector">
+                    <img onclick="changePrice('5 USD')" id='sector1' class="pic_sector" src="images/standard_sector.svg" alt="standard_sector"></object>
                 </div>
-                <div class="vip_sector">
-                    <img onclick="changePrice('12 USD')" class="pic_sector" src="images/vip_sector.svg" alt="vip_sector">
+                <div  class="vip_sector">
+                    <img onclick="changePrice('12 USD')" id='sector2' class="pic_sector" src="images/vip_sector.svg" alt="vip_sector">
                 </div>
             </div>
         </div>
@@ -110,7 +90,7 @@
 
             <div class="emailblock">
                 <p>The tickets you have purchased will be sent to the email address:</p>
-                <input type="email" name="email" value="Email">
+                <input type="email" id='inputemail' name="email" placeholder="Email">
             </div>
 
             
@@ -158,12 +138,36 @@
 
         
     </div>
+
     <div id='backpic-opacity' class="buyblock-back">
         <div class="buyblock">
         <p id="para2" class="price"></p>
-        <a href="#" class="button_buyticket">Buy ticket</a>
+        <a href="#"  id="myBtn" class="button_buyticket">Buy ticket</a>
     </div>
     </div>
-</div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+    <div class="modal-content">  
+      <div class="modal-body">
+        <p>Ticket booked!</p>
+        <p class="close">Ok</p>
+      </div> 
+    </div>
+    </div>
+
+  <div id="myModal2" class="modal2">
+
+    <div class="modal-content2">  
+      <div class="modal-body2">
+        <p>Not enough information! Check selected items</p>
+        <p class="close2">Ok</p>
+      </div> 
+    </div>
+  </div>
+  
+  <script src="js/modal_window.js"></script>  
+  
 </body>
 </html>
