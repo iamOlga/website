@@ -37,7 +37,7 @@ body{
     border-radius: 10px;
 }
 
-.mainblock .mainblock-1 .map_block img:hover{
+.mainblock .mainblock-1 .map_block .pic_sector:hover{
     box-shadow: 0 0 10px #FF12BD;
     cursor: pointer;
 }
