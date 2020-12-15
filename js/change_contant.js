@@ -2,7 +2,6 @@ function changeContent(newContent) {
     var elem = document.getElementById("para1");
     elem.innerText = newContent;
   }
-  
   function changePrice(newPrice) {
     var sector1 = document.getElementById("sector1");
     var sector2 = document.getElementById("sector2");
@@ -18,9 +17,6 @@ function changeContent(newContent) {
       sector1.style.border = "2px solid #ff12bc00";
     }
   }
-
- 
-  
   $(function(){
   $(document).on('click', '.picture', function(){
   var bg = $(this).data('bg');

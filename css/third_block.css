@@ -1,5 +1,4 @@
 .third_block{
-
     flex-direction: column;
 }
 .third_block .header3{
@@ -9,7 +8,6 @@
 .third_block .carousel{
     animation: scroll_opacity 3s forwards;
 }
-
 .fourth_block{
     flex-direction: row;
     justify-content: space-around;
@@ -30,8 +28,6 @@
     height: 20%;
     animation: scroll_opacity 3s forwards;
 }
-
-
 .apps{
     margin-top: 3%;
     width: 60%;

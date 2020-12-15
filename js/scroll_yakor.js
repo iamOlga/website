@@ -1,4 +1,3 @@
-//scroll script
 $(document).ready(function(){
     $("#menu").on("click",".local_href", function (event) {
         event.preventDefault();
@@ -7,9 +6,6 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top2}, 1200);
     });
 });
-
-//yakor script
-
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();

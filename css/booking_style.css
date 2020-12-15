@@ -18,7 +18,6 @@ body{
 #backpic-opacity{
     background-color: rgba(0, 0, 0, 0.63);
 }
-/************ MAP SECTORS ************/
 .mainblock .mainblock-1 .map_block{
     display: flex;
     flex-direction: column;
@@ -36,14 +35,10 @@ body{
     padding:5px;
     border-radius: 10px;
 }
-
 .mainblock .mainblock-1 .map_block .pic_sector:hover{
     box-shadow: 0 0 10px #FF12BD;
     cursor: pointer;
 }
-
-
-/************ INFO ************/
 .info_block{
     padding: 0 3vh;
     width: 60vh;
@@ -51,7 +46,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-/* header3 */
 .info_block .header3{
      width: 100%;;
 }
@@ -60,7 +54,6 @@ body{
     border-bottom:none;
     width: 100%;
     text-align: center;
-
 }
 .info_block .header3 h4{
     font-size: 1.2rem;
@@ -68,7 +61,6 @@ body{
     font-weight: 100;
     text-align: center;
 }
-/* date/time */
 .info_block .date, .info_block .time, .info_block .infosectors, .info_block .buyblock {
     width: 100%;
     padding-top: 4vh;
@@ -79,7 +71,6 @@ body{
 .info_block .time {
     width: 80%;
 }
-/* input */
 .form_radio_btn, .form_radio_btn2, .form_radio_btn3 {
 	display: inline-block;
 	margin-right: 10px;
@@ -102,8 +93,6 @@ body{
 .form_radio_btn label:hover, .form_radio_btn2 label:hover, .form_radio_btn3 label:hover {
 	color: white;
 }
-
-/* info seats */
 .info_block .infosectors, .info_block .emailblock{
     flex-direction: column;
     align-items: center;
@@ -122,9 +111,6 @@ body{
 .info_block .infosectors .vippic{
     width: 4vh;
 }
-
-
-/* emailblock */
 .info_block .emailblock{
     width: 90%;
     padding-top: 7vh;
@@ -142,8 +128,6 @@ body{
     border-radius: 10px;
     border: white 2xp solid;
 }
-
-/* buyblock */
 .buyblock-back{
     display: flex;
     width: 100%;
@@ -160,7 +144,6 @@ body{
     font-size: 1.5rem;
     color: #FF12BD;
 }
-
 .film_block{
     width: 50vh;
 }
@@ -171,8 +154,6 @@ body{
     min-width: 50px;
     border: 2px solid #FF12BD;
 }
-
-/************ FILM ************/
 .film_block{
     min-height: 100%;
     display: flex;
@@ -185,11 +166,6 @@ body{
 .film_block .film_item{
     margin-top: 2vh;
 }
-
-
-
-
-
 .modal, .modal2 {
     display: none; 
     position: fixed; 
@@ -239,26 +215,15 @@ body{
     font-size: 1.5rem;
     font-weight: bold;
 }
-.close:hover,
-.close:focus,.close2:hover,
-.close2:focus {
+.close:hover, .close:focus,.close2:hover, .close2:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-
 .modal-body,.modal-body2 {padding: 2px 16px;}
-
-
-
-
-
-
 @media screen and (max-width: 1100px) {
     .mainblock{
-        flex-direction: column-reverse;
-        
+        flex-direction: column-reverse;   
     }
     .mainblock .mainblock-1{
         min-width: 95%;
@@ -275,7 +240,6 @@ body{
     .modal {
         padding: 300px 0 300px;      
     }
-    
     .modal-content, .modal-content2 {
         font-size: 1.8rem;
     }
