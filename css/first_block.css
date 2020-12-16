@@ -130,28 +130,67 @@
     height: 100%;
     width: 100%;
 }
-@media screen and (max-width: 1100px) {
-    .first_block .left{
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .pre_first_block{
+        background-image: url("../images/Raya-And-The-Last-Dragon2-1100.jpg");
         width: 100%;
+    }
+    .first_block .left{
+        width: 100%; 
     }
     .first_block .right{ 
         width: 0%;
     }
     .first_block .left .container .top .title{
-        font-size: 3.2rem;
+        font-size: 4.5rem;
+    }
+    .first_block .left .container .top .addition{
+        font-size: 3rem;
+    } 
+    .first_block .left .container .bottom .trailer .button_trailer{
+        font-size: 3rem;
+        padding: 8px 14px 8px 22px;
+    } 
+    .first_block .left .container .bottom .button .button_buyticket{
+        font-size: 3rem;
+    }
+    .yakor_down{
+        font-size: 2.5rem;
+        width:5rem;
+        height:5rem;
+        padding-top: 2rem;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .pre_first_block{
+        background-image: url("../images/Raya-And-The-Last-Dragon2-700.jpg");
+    }
+    .first_block .left{
+        width: 100%; 
+    }
+    .first_block .right{ 
+        width: 0%;
+    }
+    .first_block .left .container .top .title{
+        font-size: 2.5rem;
     }
     .first_block .left .container .top .addition{
         font-size: 1.5rem;
     } 
     .first_block .left .container .bottom .trailer .button_trailer{
-        font-size: 1.5rem;
-        padding: 8px 12px 8px 18px;
+        font-size: 1.7rem;
+        padding: 8px 14px 8px 22px;
     } 
-  }
-  @media screen and (max-width: 700px) {
-    .pre_first_block{
-        background-image: url("../images/Raya-And-The-Last-Dragon2-600.jpg");
+    .first_block .left .container .bottom .button .button_buyticket{
+        font-size: 1.7rem;
     }
+    .yakor_down{
+        font-size: 1.5rem;
+        width:3rem;
+        height:3rem;
+        padding-top: 0.85rem;
+    }
+    
     .header .menu{
         font-size: 1.3rem;
     }

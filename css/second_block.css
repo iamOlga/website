@@ -1,6 +1,7 @@
 .second_block{
     flex-direction: column;
     padding-top:5rem ;
+    padding-bottom: 2rem;
 }
 .second_block .header3{
     animation: scroll_opacity 3s forwards;
@@ -26,7 +27,7 @@
     animation: scroll_opacity 3s forwards;
 }
 .second_block .films .item .poster{
-    width: 100%;
+    min-width: 100%;
     position: relative;
 }
 .pinfo{
@@ -37,9 +38,10 @@
     z-index:-5;  
 }
 .pinfo .info{  
-    padding-top:50%;
+    padding:40% 10% 0 10%;
 }
 .second_block .films .item .poster img{
+    width: 100%;
     opacity: 1;
     transition: opacity .2s linear;
 }
@@ -59,28 +61,41 @@
     color: #FF12BD;
     margin: 5px 0;
 }
-.second_block .films .item .bottom{
+.second_block .bottom{
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     width: 100%;
-    padding: 5% 0 0 0; 
 }
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1100px) {
     .second_block{    
         padding-top:2rem ;
     } 
     .second_block .films .item .poster img{
        width: 250px;     
     }
+    .second_block .header3 h2{
+        font-size: 3rem;
+    }
+    .second_block .bottom .button .button_buyticket{
+        font-size: 2.5rem;
+    }
   }
-  @media screen and (max-width: 900px) {  
+  @media screen and (max-width: 767px) {  
     .second_block .films .item {
-        width: 220px;     
+        width: 47%;     
      }
+     .second_block .header3{
+       width: 70%;
+    }
+    .second_block .header3 h2{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .pinfo{
+       display: none;
+    }
     .second_block .films .item .poster img{
-       width: 220px;      
+       width: 100%;      
     }
     .second_block .films .item .info h3{
         font-size: 1.3rem;

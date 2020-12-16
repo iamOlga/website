@@ -37,6 +37,31 @@
     opacity: 0.9;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .third_block .header3 h2, .fourth_block .header3 h2{
+        font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 767px) {  
+    .fourth_block{
+        min-height:240px;
+        width: 90%;
+        padding: 0 8%;
+        margin: 4% 0 0 0;
+        flex-direction: column-reverse;
 
+    }
+    .fourth_block .header3{
+        transform: rotate(0);
+        width: 50%; 
+
+    }
+    .fourth_block .map{
+         width: 90%;
+         height: 100%;
+
+
+     }
+  }
 
 
